@@ -206,10 +206,18 @@
 // }
 // alert( extractCurrencyValue('$120') === 120 );
 
-let styles = ['Джаз', 'Блюз'];
-styles.push('Рок-н-ролл');
+// let styles = ['Джаз', 'Блюз'];
+// styles.push('Рок-н-ролл');
+// styles[Math.floor((styles.length - 1) / 2)] = "Классика";
+// alert(styles);
+// styles.shift();
+// styles.unshift('Рэп', 'Рэги')
 
-styles[Math.floor((styles.length - 1) / 2)] = "Классика";
-alert(styles);
-styles.shift();
-styles.unshift('Рэп', 'Рэги')
+function sumInput(){
+    do{
+        let a = [];
+        let i = prompt('Введите число', '');
+        if(i == 'number') a.push(i)
+    } while ( i !== null || i !== 'string');
+    
+}
