@@ -214,10 +214,17 @@
 // styles.unshift('Рэп', 'Рэги')
 
 function sumInput(){
-    do{
-        let a = [];
-        let i = prompt('Введите число', '');
-        if(i == 'number') a.push(i)
-    } while ( i !== null || i !== 'string');
-    
+    let arr =[];
+  
+    while(true){
+        let value = prompt('Введите число', '');
+        if(value === '' || value === NaN || !isFinite(value)) break;
+        arr.push(+value);
+    }
+    let sum = 0;
+    for( let key of arr){
+        sum += key;
+    }
+    return sum;
 }
+console.log(sumInput());
